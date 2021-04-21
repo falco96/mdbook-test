@@ -1,5 +1,6 @@
 [book]
-authors = []
+authors = ["falco96"]
 language = "en"
 multilingual = false
 src = "src"
+title = "primo libro"
