@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduzione - Configuriamo Fedora</title>
+        <title>Procedere con l&#x27;installazione - Configuriamo Fedora</title>
         
         
 
@@ -18,28 +18,28 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -49,7 +49,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduzione.html" class="active"><strong aria-hidden="true">1.</strong> Introduzione</a></li><li class="chapter-item expanded "><a href="install/inst_01.html"><strong aria-hidden="true">2.</strong> Installazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install/inst_02.html"><strong aria-hidden="true">2.1.</strong> Prepararsi all'installazione</a></li><li class="chapter-item expanded "><a href="install/inst_03.html"><strong aria-hidden="true">2.2.</strong> Avviare il PC da chiavetta</a></li><li class="chapter-item expanded "><a href="install/inst_04.html"><strong aria-hidden="true">2.3.</strong> Procedere con l'installazione</a></li></ol></li><li class="chapter-item expanded "><a href="configuration/conf_01.html"><strong aria-hidden="true">3.</strong> Prima configurazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="configuration/conf_02.html"><strong aria-hidden="true">3.1.</strong> Aggiornare il sistema</a></li><li class="chapter-item expanded "><a href="configuration/conf_03.html"><strong aria-hidden="true">3.2.</strong> Abilitare RPM FUSION</a></li><li class="chapter-item expanded "><a href="configuration/conf_04.html"><strong aria-hidden="true">3.3.</strong> Approfondimento - Comandi principali</a></li><li class="chapter-item expanded "><a href="configuration/conf_05.html"><strong aria-hidden="true">3.4.</strong> Rimuovere e sostituire le app inutili</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduzione.html"><strong aria-hidden="true">1.</strong> Introduzione</a></li><li class="chapter-item expanded "><a href="../install/inst_01.html"><strong aria-hidden="true">2.</strong> Installazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../install/inst_02.html"><strong aria-hidden="true">2.1.</strong> Prepararsi all'installazione</a></li><li class="chapter-item expanded "><a href="../install/inst_03.html"><strong aria-hidden="true">2.2.</strong> Avviare il PC da chiavetta</a></li><li class="chapter-item expanded "><a href="../install/inst_04.html" class="active"><strong aria-hidden="true">2.3.</strong> Procedere con l'installazione</a></li></ol></li><li class="chapter-item expanded "><a href="../configuration/conf_01.html"><strong aria-hidden="true">3.</strong> Prima configurazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configuration/conf_02.html"><strong aria-hidden="true">3.1.</strong> Aggiornare il sistema</a></li><li class="chapter-item expanded "><a href="../configuration/conf_03.html"><strong aria-hidden="true">3.2.</strong> Abilitare RPM FUSION</a></li><li class="chapter-item expanded "><a href="../configuration/conf_04.html"><strong aria-hidden="true">3.3.</strong> Approfondimento - Comandi principali</a></li><li class="chapter-item expanded "><a href="../configuration/conf_05.html"><strong aria-hidden="true">3.4.</strong> Rimuovere e sostituire le app inutili</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -131,7 +131,7 @@
 
                     <div class="right-buttons">
                         
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -163,30 +163,38 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="guida-fedora"><a class="header" href="#guida-fedora">Guida Fedora</a></h1>
-<p>In questo documento andremo a vedere le fasi più importanti per configurare al meglio la distribuzione Fedora.</p>
-<h2 id="che-cosè-fedora"><a class="header" href="#che-cosè-fedora">Che cos'è Fedora?</a></h2>
-<p>Partiamo dalla sua definizione:<br />
-Fesora è un sistema operativo basato su Linux e sui Pacchetti <strong>RPM</strong> (<em>Red Hat Package Manager</em>).<br />
-I pacchetti RPM sono stati pensati da Red Hat, società che finanzia attivamente ed economicamente il progetto stesso Fedora.<br />
-Grazie a questo tipo di supporto, Fedora è riuscito a diventare il progetto che è ora.</p>
-<h2 id="cosa-ci-sarà-in-questa-guida"><a class="header" href="#cosa-ci-sarà-in-questa-guida">Cosa ci sarà in questa guida?</a></h2>
-<p>In questa guida andremo a vedere:</p>
-<ol>
-<li>Come installare Fedora;</li>
-<li>Come aggiornare Fedora;</li>
-<li>Comr configurarla al meglio dopo l'installazione;</li>
-<li>Come installare LAMP, per poter programmare in PHP.</li>
-</ol>
+                        <h1 id="procedere-con-linstallazione"><a class="header" href="#procedere-con-linstallazione">Procedere con l'installazione</a></h1>
+<p>Nella guida utilizzeremo un file ISO di Fedora 32, ma il procedimento è uguale anche con versioni più recenti (come la 33 o 34)</p>
+<h2 id="1-selezionare-installa"><a class="header" href="#1-selezionare-installa">1. Selezionare Installa</a></h2>
+<p>Alla richiesta se si vuole provare la distro o procedere con la sua installazione scegliere</p>
+<p><img src="../assets/img/install-hdd.png" alt="Installa su disco" title="Scegliere l'opzione installa" />
+<em>Scegliere l'opzione installa</em></p>
+<h2 id="2-scegliere-la-lingua"><a class="header" href="#2-scegliere-la-lingua">2. Scegliere la lingua</a></h2>
+<p>Procedere con la selezione della lingua. Nel mio caso andrò a scegliere l'italiano. </p>
+<p><img src="../assets/img/scelta-lingua.png" alt="Scelta lingua" />
+<em>Procedere con la scelta della lingua</em></p>
+<h2 id="3-procedere-con-le-successive-fasi-di-installazione"><a class="header" href="#3-procedere-con-le-successive-fasi-di-installazione">3. Procedere con le successive fasi di installazione</a></h2>
+<p>Procedere quindi, arrivati a questo punto, con l'impostare il vostro disco di installazione e quindi procedere con l'installazione.\ 
+È consigliabile installare Fedora in un disco vuoto, per rendere il procedimento più semplice e limitando al minimo gli eventuali rischi che qualcosa possa andare storto.</p>
+<p><img src="../assets/img/scelta-partizione.png" alt="Scegliere la partizione" />
+<em>Procedere con la scelta della partizione</em></p>
+<h2 id="4-procedere-con-linstallazione-vera-e-propria"><a class="header" href="#4-procedere-con-linstallazione-vera-e-propria">4. Procedere con l'installazione vera e propria</a></h2>
+<p>Procedere quindi con l'installazione su disco</p>
+<h2 id="5-riavviare"><a class="header" href="#5-riavviare">5. Riavviare</a></h2>
+<p>Terminata la fase di installazione che può richiedere circa 10 minuti, riavviare il sistema premurandosi di rimuovere la chiavetta USB dal PC</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../install/inst_03.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="install/inst_01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../configuration/conf_01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -198,9 +206,13 @@ Grazie a questo tipo di supporto, Fedora è riuscito a diventare il progetto che
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../install/inst_03.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a rel="next" href="install/inst_01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../configuration/conf_01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -223,14 +235,14 @@ Grazie a questo tipo di supporto, Fedora è riuscito a diventare il progetto che
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         

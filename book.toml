@@ -1,6 +1,6 @@
 [book]
-authors = ["falco96"]
-language = "en"
+authors = ["Denis Genitoni"]
+language = "it"
 multilingual = false
 src = "src"
-title = "primo libro"
+title = "Configuriamo Fedora"

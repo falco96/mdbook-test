@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduzione - Configuriamo Fedora</title>
+        <title>Abilitare RPM FUSION - Configuriamo Fedora</title>
         
         
 
@@ -18,28 +18,28 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -49,7 +49,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduzione.html" class="active"><strong aria-hidden="true">1.</strong> Introduzione</a></li><li class="chapter-item expanded "><a href="install/inst_01.html"><strong aria-hidden="true">2.</strong> Installazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install/inst_02.html"><strong aria-hidden="true">2.1.</strong> Prepararsi all'installazione</a></li><li class="chapter-item expanded "><a href="install/inst_03.html"><strong aria-hidden="true">2.2.</strong> Avviare il PC da chiavetta</a></li><li class="chapter-item expanded "><a href="install/inst_04.html"><strong aria-hidden="true">2.3.</strong> Procedere con l'installazione</a></li></ol></li><li class="chapter-item expanded "><a href="configuration/conf_01.html"><strong aria-hidden="true">3.</strong> Prima configurazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="configuration/conf_02.html"><strong aria-hidden="true">3.1.</strong> Aggiornare il sistema</a></li><li class="chapter-item expanded "><a href="configuration/conf_03.html"><strong aria-hidden="true">3.2.</strong> Abilitare RPM FUSION</a></li><li class="chapter-item expanded "><a href="configuration/conf_04.html"><strong aria-hidden="true">3.3.</strong> Approfondimento - Comandi principali</a></li><li class="chapter-item expanded "><a href="configuration/conf_05.html"><strong aria-hidden="true">3.4.</strong> Rimuovere e sostituire le app inutili</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduzione.html"><strong aria-hidden="true">1.</strong> Introduzione</a></li><li class="chapter-item expanded "><a href="../install/inst_01.html"><strong aria-hidden="true">2.</strong> Installazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../install/inst_02.html"><strong aria-hidden="true">2.1.</strong> Prepararsi all'installazione</a></li><li class="chapter-item expanded "><a href="../install/inst_03.html"><strong aria-hidden="true">2.2.</strong> Avviare il PC da chiavetta</a></li><li class="chapter-item expanded "><a href="../install/inst_04.html"><strong aria-hidden="true">2.3.</strong> Procedere con l'installazione</a></li></ol></li><li class="chapter-item expanded "><a href="../configuration/conf_01.html"><strong aria-hidden="true">3.</strong> Prima configurazione</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../configuration/conf_02.html"><strong aria-hidden="true">3.1.</strong> Aggiornare il sistema</a></li><li class="chapter-item expanded "><a href="../configuration/conf_03.html" class="active"><strong aria-hidden="true">3.2.</strong> Abilitare RPM FUSION</a></li><li class="chapter-item expanded "><a href="../configuration/conf_04.html"><strong aria-hidden="true">3.3.</strong> Approfondimento - Comandi principali</a></li><li class="chapter-item expanded "><a href="../configuration/conf_05.html"><strong aria-hidden="true">3.4.</strong> Rimuovere e sostituire le app inutili</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -131,7 +131,7 @@
 
                     <div class="right-buttons">
                         
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -163,30 +163,49 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="guida-fedora"><a class="header" href="#guida-fedora">Guida Fedora</a></h1>
-<p>In questo documento andremo a vedere le fasi più importanti per configurare al meglio la distribuzione Fedora.</p>
-<h2 id="che-cosè-fedora"><a class="header" href="#che-cosè-fedora">Che cos'è Fedora?</a></h2>
-<p>Partiamo dalla sua definizione:<br />
-Fesora è un sistema operativo basato su Linux e sui Pacchetti <strong>RPM</strong> (<em>Red Hat Package Manager</em>).<br />
-I pacchetti RPM sono stati pensati da Red Hat, società che finanzia attivamente ed economicamente il progetto stesso Fedora.<br />
-Grazie a questo tipo di supporto, Fedora è riuscito a diventare il progetto che è ora.</p>
-<h2 id="cosa-ci-sarà-in-questa-guida"><a class="header" href="#cosa-ci-sarà-in-questa-guida">Cosa ci sarà in questa guida?</a></h2>
-<p>In questa guida andremo a vedere:</p>
-<ol>
-<li>Come installare Fedora;</li>
-<li>Come aggiornare Fedora;</li>
-<li>Comr configurarla al meglio dopo l'installazione;</li>
-<li>Come installare LAMP, per poter programmare in PHP.</li>
-</ol>
+                        <h1 id="abilitare-rpm-fusion-free-e-non-free"><a class="header" href="#abilitare-rpm-fusion-free-e-non-free">Abilitare RPM Fusion Free e Non Free</a></h1>
+<p>Procedere con l'attivazione dei repo free e non free, per poter avere accesso a tutta una serie di software altrimenti non accessibili con i repository di default di Fedora. </p>
+<h2 id="rpm-fusion-free"><a class="header" href="#rpm-fusion-free">RPM Fusion Free</a></h2>
+<p>Digitare i seguenti comandi da terminale</p>
+<blockquote>
+</blockquote>
+<pre><code>su
+dnf install \
+https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+</code></pre>
+<h2 id="rpm-fusion-non-free"><a class="header" href="#rpm-fusion-non-free">RPM Fusion Non free</a></h2>
+<p>Da terminale digitale</p>
+<blockquote>
+</blockquote>
+<pre><code>su
+dnf install \
+https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+</code></pre>
+<h2 id="aggiornare-i-repository"><a class="header" href="#aggiornare-i-repository">Aggiornare i repository</a></h2>
+<p>Consiglio di aggiornare i repository facendo da terminale:</p>
+<blockquote>
+</blockquote>
+<pre><code>dnf upgrade
+</code></pre>
+<h2 id="riavviare-il-sistema"><a class="header" href="#riavviare-il-sistema">Riavviare il sistema</a></h2>
+<p>Non è obbligatorio, ma lo consiglio:</p>
+<blockquote>
+</blockquote>
+<pre><code>reboot
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../configuration/conf_02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="install/inst_01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../configuration/conf_04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -198,9 +217,13 @@ Grazie a questo tipo di supporto, Fedora è riuscito a diventare il progetto che
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../configuration/conf_02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a rel="next" href="install/inst_01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../configuration/conf_04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -223,14 +246,14 @@ Grazie a questo tipo di supporto, Fedora è riuscito a diventare il progetto che
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
